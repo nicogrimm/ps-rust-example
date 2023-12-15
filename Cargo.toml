@@ -1,0 +1,17 @@
+[package]
+name = "ps-rust-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+diesel = { version = "2.1.4", features = ["sqlite", "returning_clauses_for_sqlite_3_35"] }
+deadpool-diesel = { version = "0.5.0", features = ["sqlite"] }
+tracing = "0.1.40"
+tracing-panic = "0.1.1"
+tracing-subscriber = { version = "0.3.18", features = ["fmt", "json"] }
+thiserror = "1.0.50"
+serde = { version = "1.0.193", features = ["derive"] }
+actix-web = "4.4.0"
+tracing-actix-web = "0.7.9"
